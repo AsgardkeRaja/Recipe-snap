@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 23 13% 98%;
+    --foreground: 21 14% 26%;
+    --card: 23 13% 98%;
+    --card-foreground: 21 14% 26%;
+    --popover: 23 13% 98%;
+    --popover-foreground: 21 14% 26%;
+    --primary: 162 45% 44%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 31 28% 93%;
+    --secondary-foreground: 21 14% 26%;
+    --muted: 31 28% 93%;
+    --muted-foreground: 22 12% 55%;
+    --accent: 23 44% 56%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 28 57% 87%;
+    --input: 28 57% 87%;
+    --ring: 1 54% 57%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 21 14% 26%;
+    --foreground: 23 13% 98%;
+    --card: 21 14% 26%;
+    --card-foreground: 23 13% 98%;
+    --popover: 21 14% 26%;
+    --popover-foreground: 23 13% 98%;
+    --primary: 162 45% 44%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 21 14% 20%;
+    --secondary-foreground: 23 13% 98%;
+    --muted: 21 14% 20%;
+    --muted-foreground: 22 12% 63%;
+    --accent: 23 44% 56%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 21 14% 20%;
+    --input: 21 14% 20%;
+    --ring: 1 54% 57%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Recipe Snap Color Palette */
+:root {
+  --earthy-green: 168 42% 44%; /* #38A3A5 in HSL */
+  --light-beige: 43 30% 96%; /* #F5F5DC in HSL */
+  --burnt-orange: 1 100% 57%; /* #D9534F in HSL */
+
+  --primary: hsl(var(--earthy-green));
+  --secondary: hsl(var(--light-beige));
+  --accent: hsl(var(--burnt-orange));
+  --accent-foreground: white; /* Adjust as needed */
+  --background: hsl(var(--light-beige));
+  --card: hsl(var(--light-beige));
+  --popover: hsl(var(--light-beige));
+  --border: hsl(var(--earthy-green));
+  --input: hsl(var(--light-beige));
+}
+
+.dark {
+  :root {
+    --primary: hsl(var(--earthy-green));
+    --secondary: hsl(var(--light-beige));
+    --accent: hsl(var(--burnt-orange));
+    --accent-foreground: white; /* Adjust as needed */
+    --background: hsl(var(--light-beige));
+    --card: hsl(var(--light-beige));
+    --popover: hsl(var(--light-beige));
+    --border: hsl(var(--earthy-green));
+    --input: hsl(var(--light-beige));
+  }
+}
+
+    
